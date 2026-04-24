@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 600" width="600" height="600">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#2a2024"></stop>
+      <stop offset="1" stop-color="#17131a"></stop>
+    </linearGradient>
+  </defs>
+  <rect width="600" height="600" fill="url(#bg)"></rect>
+  
+  <g fill="#d4a34a" opacity="0.92">
+    
+    <path d="M300 90&#xA;             C 250 90, 210 130, 205 190&#xA;             C 200 215, 205 235, 210 250&#xA;             C 195 260, 185 280, 185 305&#xA;             C 185 325, 195 340, 215 340&#xA;             C 220 370, 240 395, 270 405&#xA;             L 270 450&#xA;             C 240 455, 210 470, 195 495&#xA;             C 175 530, 170 570, 172 600&#xA;             L 428 600&#xA;             C 430 570, 425 530, 405 495&#xA;             C 390 470, 360 455, 330 450&#xA;             L 330 405&#xA;             C 360 395, 380 370, 385 340&#xA;             C 405 340, 415 325, 415 305&#xA;             C 415 280, 405 260, 390 250&#xA;             C 395 230, 398 210, 395 185&#xA;             C 388 135, 350 90, 300 90 Z"></path>
+    
+    <ellipse cx="415" cy="385" rx="18" ry="24" fill="#131012"></ellipse>
+    <rect x="410" y="405" width="10" height="80" fill="#131012" rx="3"></rect>
+  </g>
+  <text x="300" y="555" text-anchor="middle" font-family="&#39;DM Serif Display&#39;, Georgia, serif" font-size="28" fill="#f4ecd8" letter-spacing="1">Jocelyn Chappell</text>
+</svg>

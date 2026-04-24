@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>Jazz Music Party · 02 May 2026 · Leeds</title>
+<title>Jazz Music Party</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Fraunces:ital,opsz,wght@0,9..144,300..900;1,9..144,300..900&family=Space+Mono:wght@400;700&family=Inter:wght@300;400;500;600;700&family=Bebas+Neue&display=swap" rel="stylesheet">
@@ -788,6 +788,55 @@
     .tier-grid { grid-template-columns: 1fr; gap: 14px; }
   }
 
+  /* === SHARE QR ============================================================= */
+  .share-qr {
+    margin-top: 72px;
+    padding-top: 48px;
+    border-top: 1px solid var(--line);
+    display: grid;
+    grid-template-columns: 1fr 280px;
+    gap: 64px;
+    align-items: center;
+  }
+  @media (max-width: 780px) {
+    .share-qr { grid-template-columns: 1fr; gap: 32px; text-align: center; justify-items: center; }
+  }
+  .share-qr-text .label { color: var(--accent); margin-bottom: 12px; }
+  .share-qr-text h3 {
+    font-family: var(--f-display);
+    font-size: clamp(32px, 4vw, 48px);
+    line-height: 1.05;
+    margin: 0 0 14px;
+  }
+  .share-qr-text p {
+    color: var(--ink-dim);
+    max-width: 48ch;
+    line-height: 1.6;
+  }
+  .share-url {
+    display: inline-block;
+    margin-top: 16px;
+    font-family: var(--f-mono);
+    font-size: 13px;
+    letter-spacing: 0.08em;
+    color: var(--accent);
+    padding: 8px 14px;
+    border: 1px dashed var(--accent);
+    border-radius: 999px;
+  }
+  .share-qr-box {
+    padding: 18px;
+    background: var(--ink);
+    border-radius: 6px;
+    line-height: 0;
+    box-shadow: 0 20px 60px color-mix(in oklab, var(--accent) 12%, transparent);
+  }
+  .share-qr-box img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+
   /* === CHARITY ============================================================== */
   .charity {
     background: var(--bg-2);
@@ -1053,16 +1102,16 @@
   </div>
 
   <h1 class="hero-title">
-    <span class="line">Jazz,</span>
-    <span class="line shift">dance <span class="amper">&</span></span>
-    <span class="line"><em>good cause</em>.</span>
+    <span class="line">Jazz</span>
+    <span class="line shift">Music</span>
+    <span class="line"><em>Party</em>.</span>
   </h1>
 
   <div class="hero-bottom">
     <p class="hero-lede">
-      One night. A live jazz set from <strong>The Speding Collective</strong>, an open bar,
-      a dance floor, board games, a lucky draw — and every net penny donated to charity.
-      Come as you are. Or better, dress up a bit. ✨
+      One night. Live jazz from <strong>The Speding Collective</strong>, a dance floor,
+      board games, a lucky draw, and a bar open throughout the event — with all net profits
+      donated to charity. Come as you are. Or better yet, dress up a bit. ✨
     </p>
 
     <div class="countdown" id="countdown" aria-live="polite">
@@ -1142,75 +1191,52 @@
     <div class="band-intro reveal">
       <h3 class="band-name"><img src="assets/logo-speding.png" alt="The Speding Collective" class="band-logo" /></h3>
       <p class="band-blurb">
-        A Leeds-born jazz collective formed in 2025. Traditional jazz, fusion, soul, Latin
-        and pop re-imagined — six players who take incredible care over every note.
-        Expect drum solos, sax flights, and a vocalist who lands somewhere between
-        Nina Simone and Amy Winehouse.
+        A Leeds-based jazz collective bringing groove, style and feel-good live energy.
+        With jazz, soul, Latin influences and fresh takes on familiar favourites, they’ll
+        set the tone for a lively night out.
       </p>
     </div>
 
     <div class="members reveal">
       <article class="member">
         <div class="num">01</div>
-        <div class="portrait"><img src="assets/m-khyan.png" alt="Khyan Speding" /></div>
-        <h4 class="name">Khyan Speding</h4>
-        <div class="inst">Drums · Bandleader</div>
-      </article>
-      <article class="member">
-        <div class="num">02</div>
         <div class="portrait"><img src="assets/m-ben-allen.png" alt="Ben Allen" /></div>
         <h4 class="name">Ben Allen</h4>
         <div class="inst">Tenor Sax · Vocals</div>
       </article>
       <article class="member">
-        <div class="num">03</div>
+        <div class="num">02</div>
         <div class="portrait"><img src="assets/m-sam.png" alt="Sam Tse" /></div>
         <h4 class="name">Sam Tse</h4>
         <div class="inst">Alto Saxophone</div>
       </article>
       <article class="member">
-        <div class="num">04</div>
+        <div class="num">03</div>
         <div class="portrait"><img src="assets/m-nico.png" alt="Nico Van De Merwe" /></div>
         <h4 class="name">Nico Van De Merwe</h4>
         <div class="inst">Keys</div>
       </article>
       <article class="member">
-        <div class="num">05</div>
-        <div class="portrait"><img src="assets/m-tom.png" alt="Tom Hughes" /></div>
-        <h4 class="name">Tom Hughes</h4>
-        <div class="inst">Bass</div>
-      </article>
-      <article class="member">
-        <div class="num">06</div>
-        <div class="portrait"><img src="assets/m-flo.png" alt="Flo Gillespie" /></div>
-        <h4 class="name">Flo Gillespie</h4>
-        <div class="inst">Vocals</div>
-      </article>
-      <article class="member">
-        <div class="num">07</div>
+        <div class="num">04</div>
         <div class="portrait"><img src="assets/m-ben-lepper.png" alt="Ben Lepper" /></div>
         <h4 class="name">Ben Lepper</h4>
         <div class="inst">Guitar</div>
+      </article>
+      <article class="member">
+        <div class="num">05</div>
+        <div class="portrait"><img src="assets/m-jocelyn-v4.png" alt="Jocelyn Chappell" /></div>
+        <h4 class="name">Jocelyn Chappell</h4>
+        <div class="inst">Vocals</div>
       </article>
     </div>
 
     <!-- Band contact block -->
     <div class="band-contact reveal">
       <div class="bc-head">
-        <div class="bc-kicker">Contact Information</div>
-        <div class="bc-sub">Management &amp; Booking · For any and all enquiries</div>
+        <div class="bc-kicker">Follow the Band</div>
+        <div class="bc-sub">The Speding Collective · on Instagram</div>
       </div>
       <div class="bc-rows">
-        <a class="bc-row" href="mailto:spedingquintet@gmail.com">
-          <span class="bc-k">Email</span>
-          <span class="bc-v">spedingquintet@gmail.com</span>
-          <span class="bc-arr">↗</span>
-        </a>
-        <a class="bc-row" href="tel:+447709982981">
-          <span class="bc-k">Phone</span>
-          <span class="bc-v">07709 982 981</span>
-          <span class="bc-arr">↗</span>
-        </a>
         <a class="bc-row" href="https://instagram.com/spedingcollective" target="_blank" rel="noopener">
           <span class="bc-k">Instagram</span>
           <span class="bc-v">@spedingcollective</span>
@@ -1232,7 +1258,7 @@
     <div class="schedule reveal">
       <div class="slot">
         <div class="slot-time">18:00 — 19:00</div>
-        <div class="slot-title">Check-in · Open bar · Board games</div>
+        <div class="slot-title">Check-in · Bar open · Board games · Dance floor open</div>
         <div class="slot-note">Doors</div>
       </div>
       <div class="slot">
@@ -1256,9 +1282,9 @@
         <div class="slot-note">Live</div>
       </div>
       <div class="slot">
-        <div class="slot-time">21:00 — 22:00</div>
-        <div class="slot-title">Dance floor · Close</div>
-        <div class="slot-note">Dance</div>
+        <div class="slot-time">21:00</div>
+        <div class="slot-title">Closing remarks · Event ends</div>
+        <div class="slot-note">Close</div>
       </div>
     </div>
   </div>
@@ -1276,22 +1302,22 @@
       <div>
         <h2>Dance a little. <span class="heart">Give</span> a lot.</h2>
         <p>
-          This party is a graduation project — and the whole point is to turn a great night
-          out into real support for a charity. <strong style="color:var(--ink)">100% of net
-          profits from ticket sales</strong> will go directly to the chosen cause.
+          This event is part of a postgraduate final project, created to turn a great night out
+          into meaningful support for charity. <strong style="color:var(--ink)">100% of net profits
+          from ticket sales</strong> will go directly to the chosen cause.
         </p>
         <p>
-          The charity partner will be announced shortly; follow along for the reveal.
+          Our charity partner will be announced soon. Stay tuned for the reveal.
         </p>
       </div>
       <div>
         <div class="charity-stat">
           <div class="big">100%</div>
-          <div class="lbl">Of net ticket profits donated</div>
+          <div class="lbl">Of net ticket profits go to charity</div>
         </div>
         <div class="charity-stat">
           <div class="big">0%</div>
-          <div class="lbl">Going to organisers</div>
+          <div class="lbl">Kept by the organisers</div>
         </div>
         <div class="charity-stat">
           <div class="big">3h</div>
@@ -1357,6 +1383,19 @@
     <p class="tier-foot reveal">
       Tickets are handled by TicketSource. <strong>100% of net profits</strong> go directly to the chosen charity.
     </p>
+
+    <!-- Share QR -->
+    <div class="share-qr reveal">
+      <div class="share-qr-text">
+        <div class="label">Share the night</div>
+        <h3>Scan · Send · Spread the word.</h3>
+        <p>Point a camera at the code to open this page on any phone. Share it with friends, post it, screenshot it — every ticket helps the cause.</p>
+        <div class="share-url">jazzmusicclub.netlify.app</div>
+      </div>
+      <div class="share-qr-box">
+        <img src="assets/qr-web.png" alt="QR code to jazzmusicclub.netlify.app" />
+      </div>
+    </div>
   </div>
 </section>
 
@@ -1370,7 +1409,7 @@
 
     <div class="venue-wrap reveal">
       <div class="venue-info">
-        <h3>Clothworkers Centenary<br/>Concert Hall &amp; The Foyer</h3>
+        <h3>Clothworkers Centenary Concert Hall &amp; The Foyer</h3>
         <address>
           School of Music, University of Leeds<br/>
           12 Cavendish Road, Woodhouse<br/>
